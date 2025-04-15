@@ -11,8 +11,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="shop" element={<Shop />} />
-          <Route path="product/1" element={<ProductPage />} />
-          {/* TODO: creare routing dinamico prodotti */}
+          <Route path="product/:id" element={<ProductPage />} />
         </Route>
       </Routes>
     </>

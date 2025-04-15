@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 function Home() {
-  const [homeData, setHomeData] = useState();
+  const [homeData, setHomeData] = useState([]);
 
   useEffect(() => {
     fetch("/data/home.json")
@@ -9,7 +9,7 @@ function Home() {
       .then((data) => setHomeData(data))
       .catch((err) => console.log(err));
   }, []);
-  console.log(homeData);
+
   return <>Home</>;
 }
 

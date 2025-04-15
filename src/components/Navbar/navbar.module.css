@@ -5,6 +5,7 @@ nav {
   align-items: center;
   padding: 1rem 2rem;
   position: fixed;
+  top: 0;
 }
 nav p {
   font-size: var(--fs-lg);
