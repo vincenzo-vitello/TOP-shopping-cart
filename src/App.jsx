@@ -1,17 +1,19 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home/Home";
+import Home from "./pages/Home";
 import Shop from "./pages/Shop/Shop";
-import ProductPage from "./pages/Product/Product";
-import Navbar from "./components/Navbar/Navbar";
+import ProductPage from "./pages/Product";
+import Layout from "./components/Layout";
 function App() {
   return (
     <>
-      <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/shop" element={<Shop />} />
-        <Route path="/product/:id" element={<ProductPage />} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="shop" element={<Shop />} />
+          <Route path="product/1" element={<ProductPage />} />
+          {/* TODO: creare routing dinamico prodotti */}
+        </Route>
       </Routes>
     </>
   );
