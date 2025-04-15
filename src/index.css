@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --jet-black: #0f0f0f; /* dark background and text */
+  --carbon-grey: #1c1c1c; /* secondary elements and cards text */
+  --cool-white: #f7f7f7; /* light background and text */
+  --platinum: #e0e0e0; /* borders, placeholder, details */
+  --electric-blue: #3d9df6; /* cta, highlight */
+  --signal-orange: #f88d4d; /* badge and dynamic accents */
+
+  --title-font: "Urbanist", sans-serif; /*h1-h2*/
+  --paragraph-font: "Inter", sans-serif; /*body*/
+
+  --fs-xs: clamp(0.875rem, 0.8rem + 0.2vw, 1rem); /* small-text */
+  --fs-sm: clamp(1rem, 0.9rem + 0.3vw, 1.125rem); /* base-text */
+  --fs-md: clamp(1.25rem, 1.1rem + 0.5vw, 1.5rem); /* subtitles */
+  --fs-lg: clamp(1.5rem, 1.3rem + 0.7vw, 2rem); /* titles */
+
+  --font-regular: 400; /*body text*/
+  --font-medium: 500; /*subtitle, subtle highlits*/
+  --font-semi-bold: 600; /*Nav menu, tag, badges*/
+  --font-bold: 700; /*Titles, headlines, cta*/
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-weight: var(--font-regular);
+  font-size: var(--fs-sm);
+  background-color: var(--cool-white);
+  color: var(--jet-black);
+  font-family: var(--paragraph-font);
+}

@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
+import "./navbar.module.css";
 export default function Navbar() {
   return (
     <nav>
+      <p>UrbanEar</p>
       <ul>
         <li>
           <Link to="/">Home</Link>
