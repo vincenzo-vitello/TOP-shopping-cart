@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Card from "../../components/Card";
 import style from "./shop.module.css";
+import heroImage from "../../assets/hero_no_bg.png";
 function Shop() {
   const [products, setProducts] = useState([]);
 
@@ -13,6 +14,7 @@ function Shop() {
 
   return (
     <div className={style.shopContainer}>
+      <img src={heroImage} alt="" className={style.heroImage} />
       {products &&
         products.map((product) => {
           return (
