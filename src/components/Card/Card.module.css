@@ -1,10 +1,90 @@
+.card {
+  height: fit-content;
+  color: var(--carbon-grey);
+  text-decoration: none;
+  overflow: hidden;
+}
 .card .imageContainer {
   width: 100%;
-  height: 300px;
+  aspect-ratio: 4 / 3;
+  position: relative;
   overflow: hidden;
+  border-radius: 2rem;
+}
+.card .imageContainer button {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--cool-white);
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: 2px solid var(--platinum);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+.card .imageContainer:hover button {
+  opacity: 1;
+  top: 50%;
+}
+.card .imageContainer button:hover {
+  background-color: var(--platinum);
+  color: var(--carbon-grey);
+}
+.card .imageContainer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.594);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.card .imageContainer:hover::after {
+  opacity: 1;
 }
 .card .imageContainer img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
+  transition: all 0.5s ease-in-out;
+}
+.card .imageContainer:hover img {
+  scale: 1.05;
+}
+.card .content {
+  padding: 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.card .productName {
+  font-size: var(--fs-md);
+  font-weight: var(--font-medium);
+}
+.card .productBrand {
+  font-size: var(--fs-xs);
+  font-weight: var(--font-regular);
+  opacity: 0.8;
+}
+.card .productPrice {
+  font-size: var(--fs-md);
+  font-weight: var(--font-semi-bold);
+}
+.cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cta button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-bottom: 1px solid var(--carbon-grey);
 }

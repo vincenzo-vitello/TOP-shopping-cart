@@ -12,8 +12,7 @@ export default function Navbar() {
           <Link to="/shop">Shop</Link>
         </li>
         <li>
-          <Link to="/product/1">Product</Link>{" "}
-          {/* TODO: creare routing dinamico prodotti */}
+          <Link to="/cart">Cart</Link>{" "}
         </li>
       </ul>
     </nav>
