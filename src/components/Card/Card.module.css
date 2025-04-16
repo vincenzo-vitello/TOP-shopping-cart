@@ -86,5 +86,8 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  color: var(--carbon-grey);
   border-bottom: 1px solid var(--carbon-grey);
+  font-size: var(--fs-xs);
+  font-weight: var(--font-bold);
 }

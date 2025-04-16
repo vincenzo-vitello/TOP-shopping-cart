@@ -1,6 +1,9 @@
 .shopContainer {
   height: 100vh;
   position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 .shopContainer .heroImage {
   position: absolute;
@@ -22,17 +25,20 @@
   mix-blend-mode: difference;
   color: var(--cool-white);
   width: 100%;
-  margin-top: 6rem;
+}
+.catalogTitle span {
+  display: block;
+  animation: slideFadeUp 0.3s ease-out forwards;
 }
 .catalogTitle span:first-of-type {
   position: relative;
-  top: 0;
-  right: -20%;
+  bottom: 10%;
+  left: 20%;
 }
 .catalogTitle span:last-of-type {
   position: relative;
-  top: 0;
-  right: -30%;
+  bottom: 10%;
+  left: 30%;
 }
 .shopContent {
   display: grid;

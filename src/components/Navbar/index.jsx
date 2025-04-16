@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import "./navbar.module.css";
+import style from "./navbar.module.css";
 export default function Navbar() {
+  let cartCount = 1;
   return (
     <nav>
       <p>UrbanEar</p>
@@ -12,7 +13,12 @@ export default function Navbar() {
           <Link to="/shop">Shop</Link>
         </li>
         <li>
-          <Link to="/cart">Cart</Link>{" "}
+          <Link to="/cart">
+            Cart{" "}
+            {cartCount > 0 && (
+              <span className={style.cartCount}>[{cartCount}]</span>
+            )}
+          </Link>
         </li>
       </ul>
     </nav>
