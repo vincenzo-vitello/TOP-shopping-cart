@@ -12,6 +12,7 @@ footer {
   display: grid;
   place-items: center;
   padding: 50px;
+  color: var(--cool-white);
 }
 footer a {
   color: var(--cool-white);

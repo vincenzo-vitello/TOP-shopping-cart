@@ -13,7 +13,7 @@ export default function Card({
     <div className={style.card}>
       <div className={style.imageContainer}>
         <Link to={linkTo} className={style.link}>
-          <img src={images[1]} alt="" />
+          <img src={images[0]} alt="" />
           <button>Show Product</button>
         </Link>
       </div>

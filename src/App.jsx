@@ -5,6 +5,7 @@ import Shop from "./pages/Shop/Shop";
 import ProductPage from "./pages/Product";
 import Cart from "./pages/Cart";
 import Layout from "./components/Layout";
+
 function App() {
   return (
     <>

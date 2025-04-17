@@ -1,17 +1,9 @@
-import { useState, useEffect } from "react";
+import { useProducts } from "../../context/ContextProvider";
 import Card from "../../components/Card";
 import style from "./shop.module.css";
 import heroImage from "../../assets/shop_bg_2.webp";
 function Shop() {
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    fetch("/data/products.json")
-      .then((res) => res.json())
-      .then((data) => setProducts(data))
-      .catch((err) => console.log(err));
-  }, []);
-
+  const { products } = useProducts();
   return (
     <>
       <div className={style.shopContainer}>

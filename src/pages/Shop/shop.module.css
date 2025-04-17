@@ -40,6 +40,12 @@
   bottom: 10%;
   left: 30%;
 }
+.catalogTitle span::selection {
+  background-color: transparent;
+}
+.catalogTitle span:hover {
+  cursor: default;
+}
 .shopContent {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
