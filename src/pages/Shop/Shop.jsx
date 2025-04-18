@@ -3,7 +3,7 @@ import Card from "../../components/Card";
 import style from "./shop.module.css";
 import heroImage from "../../assets/shop_bg_2.webp";
 function Shop() {
-  const { products } = useProducts();
+  const { products, addToCart } = useProducts();
   return (
     <>
       <div className={style.shopContainer}>
@@ -25,7 +25,7 @@ function Shop() {
                 category={product.category}
                 linkTo={`/product/${product.id}`}
                 addToCart={() => {
-                  console.log("add to cart");
+                  addToCart(product);
                 }}
               />
             );

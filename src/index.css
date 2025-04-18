@@ -45,5 +45,5 @@ body {
     #8e9eab
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #eef2f3, #8e9eab);
-  box-shadow: 0 0 100px #8e9eaba9;
+  box-shadow: 0 2rem 20rem rgba(0, 0, 0, 0.707);
 }

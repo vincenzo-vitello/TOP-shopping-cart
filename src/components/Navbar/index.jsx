@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import style from "./navbar.module.css";
+import { useProducts } from "../../context/ContextProvider";
 export default function Navbar() {
-  let cartCount = 1;
+  const cart = useProducts();
+  const cartCount = cart.cart.length;
   return (
     <nav>
       <p>UrbanEar</p>

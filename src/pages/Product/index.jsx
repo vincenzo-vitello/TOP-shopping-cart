@@ -5,10 +5,16 @@ import style from "./product.module.css";
 
 function ProductPage() {
   const { id } = useParams();
-  const { products } = useProducts();
+  const { products, addToCart } = useProducts();
   const product = products.find((product) => product.id == id);
 
-  if (!product) return <div>Product not found</div>;
+  if (!product) {
+    return (
+      <div>
+        <p>Product not found</p>
+      </div>
+    );
+  }
 
   const [mainImage, setMainImage] = useState(product.images[0]);
 
@@ -22,7 +28,7 @@ function ProductPage() {
         <div className={style.productInfo}>
           <div className={style.headerRow}>
             <h1>{product.name}</h1>
-            <button>Aggiungi al carrello</button>
+            <button onClick={() => addToCart(product)}>Add to cart</button>
           </div>
           <p>{product.longDescription}</p>
           <p className={style.price}>{product.price}€</p>
