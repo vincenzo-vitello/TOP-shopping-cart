@@ -5,7 +5,6 @@
     "ctaText": "Shop Now",
     "ctaLink": "/shop",
     "backgroundImage": "../../src/assets/hero_no_bg.png",
-    "backgroundImageDecor": "../../src/assets/clouds_no_bg.png",
     "abstractImage": "../../src/assets/abstract_bg.png"
   },
   "featuredProduct": {
