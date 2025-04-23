@@ -10,23 +10,23 @@
   "featuredProduct": {
     "title": "Featured: AirPods Max",
     "description": "Crafted by Apple for an unmatched audio experience. Discover the perfect blend of luxury, sound, and innovation.",
-    "image": "/assets/AirPods/airpods_macro_1.webp",
+    "image": "../../src/assets/AirPods/airpods_macro_2.webp",
     "link": "/product/1",
     "label": "Limited Stock"
   },
   "benefits": [
     {
-      "icon": "/assets/icons/shipping.svg",
+      "icon": "../../src/assets/icons/shipping.svg",
       "title": "Free Shipping",
       "description": "Enjoy fast & free delivery on all orders, no minimum required."
     },
     {
-      "icon": "/assets/icons/return.svg",
+      "icon": "../../src/assets/icons/return.svg",
       "title": "30-Day Return",
       "description": "Changed your mind? No problem. Easy returns within 30 days."
     },
     {
-      "icon": "/assets/icons/support.svg",
+      "icon": "../../src/assets/icons/support.svg",
       "title": "Premium Support",
       "description": "Get expert help anytime via chat or email, 7 days a week."
     }
