@@ -4,6 +4,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  overflow: hidden;
 }
 .shopContainer .heroImage {
   position: absolute;
@@ -51,4 +52,23 @@
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 3rem;
   padding: 6rem 2rem;
+}
+@media (max-width: 768px) {
+  .catalogTitle span:first-of-type {
+    left: 5vw;
+  }
+  .catalogTitle span:last-of-type {
+    left: 10vw;
+  }
+  .catalogTitle span:first-of-type,
+  .catalogTitle span:last-of-type {
+    bottom: 5vh;
+  }
+  .shopContainer .heroImage {
+    top: 20vh;
+    transform: translateX(0%) rotate(20deg);
+    scale: 1.2;
+    max-width: 100vw;
+    opacity: 0.6;
+  }
 }
