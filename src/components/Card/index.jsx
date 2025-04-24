@@ -9,12 +9,27 @@ export default function Card({
   linkTo,
   addToCart,
 }) {
+  const isMobile = window.matchMedia(
+    "(hover: none) and (pointer: coarse)"
+  ).matches;
+
   return (
     <div className={style.card}>
-      <div className={style.imageContainer}>
-        <Link to={linkTo} className={style.link}>
+      <div
+        className={style.imageContainer}
+        onClick={() => {
+          if (isMobile) {
+            window.location.href = linkTo;
+          }
+        }}
+      >
+        <Link
+          to={linkTo}
+          className={style.link}
+          onClick={(e) => isMobile && e.preventDefault()}
+        >
           <img src={images[0]} alt="" />
-          <button>Show Product</button>
+          {!isMobile && <button>Show Product</button>}
         </Link>
       </div>
       <div className={style.content}>

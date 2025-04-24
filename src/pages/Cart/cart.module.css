@@ -169,3 +169,67 @@ input[type="number"] {
 .checkOutContainer button:hover {
   background-color: var(--jet-black);
 }
+
+@media (max-width: 768px) {
+  .cartContainer {
+    height: auto;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 4rem 2rem;
+    gap: 2rem;
+  }
+
+  .cartPage {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2rem;
+  }
+
+  .cartItems,
+  .checkOutContainer {
+    width: 100%;
+    max-height: none;
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .cartItems p:first-child {
+    margin-bottom: 1rem;
+  }
+  .cartItem {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--cool-white);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: none;
+  }
+
+  .cartItem img {
+    align-self: center;
+    height: auto;
+    max-height: 200px;
+  }
+
+  .productInfo {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .productDescription {
+    width: 100%;
+  }
+
+  input[type="number"] {
+    width: 4rem;
+  }
+
+  .checkOutContainer {
+    position: static;
+    background-color: var(--cool-white);
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+}

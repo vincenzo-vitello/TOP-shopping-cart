@@ -91,3 +91,13 @@
   font-size: var(--fs-xs);
   font-weight: var(--font-bold);
 }
+@media (hover: none) and (pointer: coarse) {
+  .imageContainer::after,
+  .imageContainer button {
+    display: none !important;
+  }
+
+  .card .imageContainer:hover img {
+    scale: 1;
+  }
+}
