@@ -114,4 +114,9 @@ nav ul li:nth-last-of-type(1) a {
     background-color: rgba(0, 0, 0, 0.4);
     z-index: 9;
   }
+
+  nav ul li a:hover {
+    color: inherit;
+    background-color: inherit;
+  }
 }
