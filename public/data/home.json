@@ -4,29 +4,29 @@
     "subheadline": "Explore the finest over-ear headphones designed for true sound lovers.",
     "ctaText": "Shop Now",
     "ctaLink": "/shop",
-    "backgroundImage": "../../src/assets/hero_no_bg.png",
-    "abstractImage": "../../src/assets/abstract_bg.png"
+    "backgroundImage": "../assets/hero_no_bg.png",
+    "abstractImage": "../assets/abstract_bg.png"
   },
   "featuredProduct": {
     "title": "Featured: AirPods Max",
     "description": "Crafted by Apple for an unmatched audio experience. Discover the perfect blend of luxury, sound, and innovation.",
-    "image": "../../src/assets/AirPods/airpods_macro_2.webp",
+    "image": "../assets/AirPods/airpods_macro_2.webp",
     "link": "/product/1",
     "label": "Limited Stock"
   },
   "benefits": [
     {
-      "icon": "../../src/assets/icons/shipping.svg",
+      "icon": "../assets/icons/shipping.svg",
       "title": "Free Shipping",
       "description": "Enjoy fast & free delivery on all orders, no minimum required."
     },
     {
-      "icon": "../../src/assets/icons/return.svg",
+      "icon": "../assets/icons/return.svg",
       "title": "30-Day Return",
       "description": "Changed your mind? No problem. Easy returns within 30 days."
     },
     {
-      "icon": "../../src/assets/icons/support.svg",
+      "icon": "../assets/icons/support.svg",
       "title": "Premium Support",
       "description": "Get expert help anytime via chat or email, 7 days a week."
     }

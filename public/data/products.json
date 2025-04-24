@@ -6,13 +6,13 @@
     "price": 629.0,
     "category": "wireless",
     "images": [
-      "../../src/assets//AirPods/airpods_panoramic.webp",
-      "../../src/assets//AirPods/airpods_case.webp",
-      "../../src/assets//AirPods/airpods_macro_1.webp",
-      "../../src/assets//AirPods/airpods_macro_2.webp",
-      "../../src/assets//AirPods/airpods_macro_3.webp",
-      "../../src/assets//AirPods/airpods_macro_4.webp",
-      "../../src/assets//AirPods/airpods_macro_5.webp"
+      "../assets/AirPods/airpods_panoramic.webp",
+      "../assets/AirPods/airpods_case.webp",
+      "../assets/AirPods/airpods_macro_1.webp",
+      "../assets/AirPods/airpods_macro_2.webp",
+      "../assets/AirPods/airpods_macro_3.webp",
+      "../assets/AirPods/airpods_macro_4.webp",
+      "../assets/AirPods/airpods_macro_5.webp"
     ],
     "description": "High-fidelity audio, industry-leading Active Noise Cancellation, and a premium aluminum design that delivers immersive sound with incredible clarity.",
     "longDescription": "Experience a new era of audio with the Apple AirPods Max. Designed with custom acoustic drivers and computational audio, these over-ear headphones offer a revolutionary listening experience. Active Noise Cancellation adapts in real time to external noise, while Transparency mode lets the outside world in with a single tap. The knit mesh canopy and memory foam ear cushions provide exceptional comfort, even during long listening sessions. With up to 20 hours of battery life and a sleek, minimalist design, the AirPods Max are built for audiophiles who demand performance and style."
@@ -24,11 +24,11 @@
     "price": 399.0,
     "category": "wireless",
     "images": [
-      "../../src/assets//Beats/beats_macro_1.webp",
-      "../../src/assets//Beats/beats_macro_2.webp",
-      "../../src/assets//Beats/beats_macro_3.webp",
-      "../../src/assets//Beats/beats_macro_4.webp",
-      "../../src/assets//Beats/beats_case.webp"
+      "../assets/Beats/beats_macro_1.webp",
+      "../assets/Beats/beats_macro_2.webp",
+      "../assets/Beats/beats_macro_3.webp",
+      "../assets/Beats/beats_macro_4.webp",
+      "../assets/Beats/beats_case.webp"
     ],
     "description": "Powerful sound with signature Beats bass, Active Noise Cancelling, spatial audio, and up to 40 hours of battery life for all-day listening.",
     "longDescription": "The Beats Studio Pro offers premium performance for music lovers and professionals alike. Equipped with fully adaptive Active Noise Cancelling and personalized spatial audio with dynamic head tracking, these headphones bring studio-quality sound wherever you go. The ergonomic design ensures a secure and comfortable fit, and the intuitive on-device controls make it easy to manage music and calls. With USB-C lossless audio, enhanced voice-targeting microphones, and 40 hours of battery life, the Studio Pro is built for high-performance wireless listening on the go or in the studio."
