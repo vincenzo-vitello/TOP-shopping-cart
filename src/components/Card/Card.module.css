@@ -91,6 +91,7 @@
   font-size: var(--fs-xs);
   font-weight: var(--font-bold);
 }
+/* Mobile */
 @media (hover: none) and (pointer: coarse) {
   .imageContainer::after,
   .imageContainer button {
