@@ -15,8 +15,7 @@
   object-fit: cover;
   top: 0;
   right: 0;
-  transform: translateX(15%) rotate(40deg);
-  scale: 1.2;
+  transform: translateX(15%) translateY(-15%) rotate(30deg);
   z-index: -1;
   opacity: 0.8;
 }

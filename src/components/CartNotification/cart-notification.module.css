@@ -1,0 +1,21 @@
+.notification {
+  opacity: 0;
+  transform: translateY(50px);
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(50px);
+  background-color: var(--cool-white);
+  color: var(--carbon-grey);
+  padding: clamp(0.5rem, 1vw, 1rem);
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 99;
+  font-size: var(--fs-xs);
+  transition: all 0.3s ease-in-out;
+}
+
+.notification.visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}

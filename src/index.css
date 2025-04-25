@@ -30,6 +30,7 @@ body {
   font-weight: var(--font-regular);
   font-size: var(--fs-sm);
   color: var(--carbon-grey);
+  background: var(--carbon-grey);
   font-family: var(--paragraph-font);
   overflow-x: hidden;
   scroll-behavior: smooth;

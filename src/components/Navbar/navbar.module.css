@@ -55,6 +55,11 @@ nav ul li:nth-last-of-type(1) a {
 }
 
 @media (max-width: 768px) {
+  nav {
+    background: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
   .burger {
     display: flex;
     flex-direction: column;

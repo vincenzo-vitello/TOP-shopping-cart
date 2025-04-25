@@ -64,37 +64,39 @@ function CartPage() {
           )}
         </div>
 
-        <div className={style.checkOutContainer}>
-          <h3>Summary</h3>
+        {cart.length > 0 && (
+          <div className={style.checkOutContainer}>
+            <h3>Summary</h3>
 
-          <div className={style.productSummaryList}>
-            {cart.map((product) => (
-              <div key={product.id} className={style.productSummaryRow}>
-                <span className={style.productSummaryName}>
-                  {product.name} × {product.quantity}
-                </span>
-                <span className={style.productSummaryPrice}>
-                  {(product.price * product.quantity).toFixed(2)}€
-                </span>
-              </div>
-            ))}
-          </div>
+            <div className={style.productSummaryList}>
+              {cart.map((product) => (
+                <div key={product.id} className={style.productSummaryRow}>
+                  <span className={style.productSummaryName}>
+                    {product.name} × {product.quantity}
+                  </span>
+                  <span className={style.productSummaryPrice}>
+                    {(product.price * product.quantity).toFixed(2)}€
+                  </span>
+                </div>
+              ))}
+            </div>
 
-          <div className={style.summaryRow}>
-            <span className={style.label}>Subtotal</span>
-            <span className={style.value}>{total.toFixed(2)}€</span>
-          </div>
-          <div className={style.summaryRow}>
-            <span className={style.label}>Taxes (Included)</span>
-            <span className={style.value}>{(total * 0.2).toFixed(2)}€</span>
-          </div>
-          <div className={style.totalRow}>
-            <span>Total</span>
-            <span>{(total * 1.2).toFixed(2)}€</span>
-          </div>
+            <div className={style.summaryRow}>
+              <span className={style.label}>Subtotal</span>
+              <span className={style.value}>{total.toFixed(2)}€</span>
+            </div>
+            <div className={style.summaryRow}>
+              <span className={style.label}>Taxes (Included)</span>
+              <span className={style.value}>{(total * 0.2).toFixed(2)}€</span>
+            </div>
+            <div className={style.totalRow}>
+              <span>Total</span>
+              <span>{(total * 1.2).toFixed(2)}€</span>
+            </div>
 
-          <button onClick={handleCheckout}>Proceed to Checkout</button>
-        </div>
+            <button onClick={handleCheckout}>Proceed to Checkout</button>
+          </div>
+        )}
       </div>
     </div>
   );

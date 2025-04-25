@@ -4,7 +4,6 @@ const ProductContext = createContext();
 
 export function ProductProvider({ children }) {
   const [products, setProducts] = useState([]);
-
   const [cart, setCart] = useState(() => {
     try {
       const storedCart = localStorage.getItem("cart");
@@ -13,6 +12,11 @@ export function ProductProvider({ children }) {
       console.error("Errore parsing localStorage cart:", error);
       return [];
     }
+  });
+
+  const [notification, setNotification] = useState({
+    message: "",
+    visible: false,
   });
 
   useEffect(() => {
@@ -25,6 +29,18 @@ export function ProductProvider({ children }) {
       .then((data) => setProducts(data))
       .catch((err) => console.log(err));
   }, []);
+
+  const showNotification = (message) => {
+    setNotification({ message, visible: true });
+
+    setTimeout(() => {
+      setNotification((prev) => ({ ...prev, visible: false }));
+
+      setTimeout(() => {
+        setNotification({ message: "", visible: false });
+      }, 500);
+    }, 2000);
+  };
 
   const addToCart = (product) => {
     setCart((prev) => {
@@ -40,10 +56,13 @@ export function ProductProvider({ children }) {
         return [...prev, { ...product, quantity: 1 }];
       }
     });
+
+    showNotification("Product added to cart!");
   };
 
   const removeFromCart = (product) => {
     setCart((prev) => prev.filter((item) => item.id !== product.id));
+    showNotification("Product removed from cart!");
   };
 
   const updateQuantity = (productId, quantity) => {
@@ -61,6 +80,7 @@ export function ProductProvider({ children }) {
         addToCart,
         removeFromCart,
         updateQuantity,
+        notification,
       }}
     >
       {children}

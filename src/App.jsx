@@ -6,10 +6,12 @@ import ProductPage from "./pages/Product";
 import Cart from "./pages/Cart";
 import Layout from "./components/Layout";
 import ScrollToTop from "./components/ScrollToTop";
+import CartNotification from "./components/CartNotification";
 function App() {
   return (
     <>
       <ScrollToTop />
+      <CartNotification />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />

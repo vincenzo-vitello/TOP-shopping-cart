@@ -1,7 +1,7 @@
 import { useProducts } from "../../context/ContextProvider";
 import Card from "../../components/Card";
 import style from "./shop.module.css";
-import heroImage from "../../../public/assets/shop_bg_2.webp";
+import heroImage from "/assets/shop_bg_2.webp";
 function Shop() {
   const { products, addToCart } = useProducts();
   return (
